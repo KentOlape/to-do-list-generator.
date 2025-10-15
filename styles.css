@@ -1,0 +1,153 @@
+body {
+    text-align: justify;
+    background: linear-gradient(to right, #2774b8, #4ce0b9);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;   
+    color: rgb(255, 255, 255); 
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+.header-logo{
+    display: flex;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    width: 5rem;
+    border-radius: 1.5rem;
+}
+.header-logo:hover{
+    transform: translateY(-5%);
+}
+
+button{
+    display: flex;
+    background-color: #3ec7a2;
+    border: none;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 28rem;
+    left: 15rem;
+}
+button:hover{
+    transform: translateY(-5%);
+}
+.todo-image{
+    display: flex;
+    position: absolute;
+    top: 6rem;
+    left: 44rem;
+    width: 25rem;
+    height: 28rem;
+    border-radius: 3rem;
+    border: 0.3rem solid rgb(36, 209, 209);
+    box-shadow: 0 0.2px 0.8rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    padding: 1rem;
+}
+.todo-image:hover{
+    transform: translateY(-5%);
+}
+.text{
+    position: fixed;
+    top: 9rem;
+    left: 12.5rem;
+    color: white;
+    font-size: 1.7rem;
+    line-height: 1.7;
+    max-width: 25rem;
+}
+.white-text {
+    color: white;
+}
+.mint-text {
+    color: #3ec7a2;
+}
+h6{
+    font-weight: 400;
+    font-size: 1rem;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    .todo-image {
+        position: static;
+        width: 20rem;
+        height: auto;
+        margin: 2rem auto;
+        display: block;
+    }
+
+    .text {
+        position: static;
+        text-align: center;
+        margin: 1rem auto;
+        max-width: 80%;
+    }
+
+    button {
+        position: static;
+        margin: 2rem auto;
+        display: block;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-logo {
+        position: static;
+        margin-top: 1rem;
+    }
+}
+
+
+/* ===== Mobile Phones (screens below 768px) ===== */
+@media (max-width: 767px) {
+    body {
+        text-align: center;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .header-logo {
+        position: static;
+        margin-top: 1rem;
+        width: 4rem;
+    }
+
+    .todo-image {
+        position: static;
+        width: 80%;
+        height: auto;
+        margin: 2rem auto;
+        display: block;
+    }
+
+    .text {
+        position: static;
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin: 1rem auto;
+    }
+
+    button {
+        position: static;
+        margin: 1.5rem auto;
+        padding: 0.8rem 1.2rem;
+        font-size: 1rem;
+        display: inline-block;
+    }
+}
